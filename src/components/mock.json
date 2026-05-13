@@ -1,0 +1,115 @@
+[
+    {
+        "artist": "Alex Horley Orlandelli",
+        "cardClass": "Warrior",
+        "dbfId": 7,
+        "health": 30,
+        "heroPowerDbfId": 169,
+        "id": "HERO_01",
+        "name": "Garrosh Hellscream",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Wei Wang",
+        "cardClass": "Mage",
+        "dbfId": 637,
+        "health": 30,
+        "heroPowerDbfId": 807,
+        "id": "HERO_08",
+        "name": "Jaina Proudmoore",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Glenn Rane",
+        "cardClass": "Hunter",
+        "dbfId": 31,
+        "health": 30,
+        "heroPowerDbfId": 800,
+        "id": "HERO_05",
+        "name": "Rexxar",
+        "set": "Core",
+        "type": "Hero",
+        "races": ["Beast"]
+    },
+    {
+        "artist": "Tyler Walpole",
+        "cardClass": "Paladin",
+        "dbfId": 671,
+        "health": 30,
+        "heroPowerDbfId": 472,
+        "id": "HERO_04",
+        "name": "Uther Lightbringer",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Jesper Ejsing",
+        "cardClass": "Rogue",
+        "dbfId": 930,
+        "health": 30,
+        "heroPowerDbfId": 730,
+        "id": "HERO_03",
+        "name": "Valeera Sanguinar",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Raymond Swanland",
+        "cardClass": "Shaman",
+        "dbfId": 1066,
+        "health": 30,
+        "heroPowerDbfId": 687,
+        "id": "HERO_02",
+        "name": "Thrall",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Daren Bader",
+        "cardClass": "Warlock",
+        "dbfId": 893,
+        "health": 30,
+        "heroPowerDbfId": 565,
+        "id": "HERO_07",
+        "name": "Gul'dan",
+        "set": "Core",
+        "type": "Hero",
+        "races": ["Demon"]
+    },
+    {
+        "artist": "Zoltan Boros",
+        "cardClass": "Druid",
+        "dbfId": 274,
+        "health": 30,
+        "heroPowerDbfId": 573,
+        "id": "HERO_06",
+        "name": "Malfurion Stormrage",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Ben Thompson",
+        "cardClass": "Priest",
+        "dbfId": 813,
+        "health": 30,
+        "heroPowerDbfId": 441,
+        "id": "HERO_09",
+        "name": "Anduin Wrynn",
+        "set": "Core",
+        "type": "Hero"
+    },
+    {
+        "artist": "Lars Grant-West",
+        "cardClass": "Death Knight",
+        "dbfId": 78065,
+        "health": 30,
+        "heroPowerDbfId": 78070,
+        "id": "HERO_11",
+        "name": "The Lich King",
+        "set": "March of the Lich King",
+        "type": "Hero",
+        "races": ["Undead"]
+    }
+]
