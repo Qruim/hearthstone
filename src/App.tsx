@@ -1,5 +1,5 @@
 import "./App.css";
-import HearstoneCardList from "./features/hearstoneCardList/HearstoneCardList";
+import HearstoneCardList from "./components/hearstoneCardList/HearstoneCardList";
 
 function App() {
     return (
