@@ -11,8 +11,11 @@ import HTMLReactParser from "html-react-parser";
 import { JSX, useEffect, useState } from "react";
 import { useGoldAppDispatch, useGoldAppSelector } from "../../app/hooks";
 import { decrement, decrementByAmount, selectCount } from "./hearstoneCardListSlice";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import { Button } from "@mui/material";
 
 interface HSCard {
+    uniqId: string;
     artist?: string;
     cardClass?: string;
     dbfId: number;
@@ -62,9 +65,10 @@ function refresh_tavern(currentPool: HSCard[] | undefined, currentTier: number):
     const cardsIdxList = Array.from({ length: TAVERN_SIZE[currentTier - 1] }, () => {
         return Math.floor(Math.random() * hsCardList.length);
     });
-    const returnList = cardsIdxList.map((item) => {
+
+    const returnList = cardsIdxList.map((item, index) => {
         return (
-            <Grid size={1.7} key={hsCardList[item].id}>
+            <Grid size={1.7} key={hsCardList[item].id + String(index)}>
                 <Card>
                     <Tooltip describeChild title={hsCardList[item].text ? HTMLReactParser(`<p>${hsCardList[item].text}</p>`) : ""}>
                         <CardActionArea>
@@ -97,7 +101,7 @@ function refresh_tavern(currentPool: HSCard[] | undefined, currentTier: number):
 }
 function HearstoneCardList() {
     const [hsCards, setHsCards] = useState<HSCard[]>();
-    const [tavern, setTavern] = useState<JSX.Element[] | JSX.Element>(<div>default state</div>);
+    const [tavern, setTavern] = useState<JSX.Element[] | JSX.Element>(<div>Loading...</div>);
     const [tier, setTier] = useState<number>(1);
 
     const gold = useGoldAppSelector(selectCount);
@@ -144,17 +148,25 @@ function HearstoneCardList() {
         <Container maxWidth="xl">
             <h2>Heartstone Card List</h2>
             <h3>
-                Current Tier: {tier} - Upgrade: {TAVERN_UPGRADE_COSE[tier]}gold
+                Current Tier: {tier}
+                {tier < 6 ? ` - Upgrade: ${TAVERN_UPGRADE_COSE[tier]}gold` : ""}
             </h3>
             <h3>Gold: {gold}</h3>
-            <button type="button" onClick={handleRefreshTavernClick}>
-                Refresh
-            </button>
+            <ButtonGroup variant="contained" aria-label="Basic button group">
+                <Button type="button" onClick={handleRefreshTavernClick}>
+                    Refresh
+                </Button>
 
-            <button type="button" onClick={handleTierUpgrade} disabled={tier === 6 ? true : false}>
-                Upgrade Tier
-            </button>
+                <Button type="button" onClick={handleTierUpgrade} disabled={tier === 6 ? true : false}>
+                    Upgrade Tier
+                </Button>
+            </ButtonGroup>
+
             <Grid container spacing={2}>
+                {tavern}
+            </Grid>
+            <Grid container spacing={2}>
+                {/* change this to my hand */}
                 {tavern}
             </Grid>
         </Container>

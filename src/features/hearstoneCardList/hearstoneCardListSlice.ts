@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { GoldRootState } from "../../app/store";
+import { GoldRootState } from "../../app/storeGold";
 
 export interface CounterState {
     value: number;
