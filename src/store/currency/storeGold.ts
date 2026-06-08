@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../features/hearstoneCardList/hearstoneCardListSlice";
+import counterReducer from "./sliceGold";
 
 export const store = configureStore({
     reducer: {
