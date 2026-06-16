@@ -1,48 +1,50 @@
 body {
-    /* background-image: url(/public/bg.jpg); */
-    /* background-color: #523c15; */
-    background-color: #3a3733;
-    background-repeat: no-repeat;
-    background-size: 72%;
-    color: #fff;
-    background-position: top center;
+	/* background-image: url(/public/bg.jpg); */
+	/* background-color: #523c15; */
+	background-color: #3a3733;
+	background-repeat: no-repeat;
+	background-size: 72%;
+	color: #fff;
+	background-position: top center;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 .card_stats {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    inset: 0;
-    top: unset;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	inset: 0;
+	top: unset;
 }
 .card_stats > div {
-    color: #fff;
-    aspect-ratio: 1;
-    height: 1em;
-    padding: 1rem;
-    text-align: center;
+	color: #fff;
+	aspect-ratio: 1;
+	width: 1.4em;
+	height: 1.4em;
+	padding: 1rem;
+	text-align: center;
+	box-sizing: content-box;
 }
 
 .card_attach {
-    background: #9b2626;
+	background: #9b2626;
 }
 
 .card_health {
-    background: green;
+	background: green;
 }
 
 span.card_tier {
-    display: flex;
-    flex-wrap: wrap;
-    width: 3rem;
-    justify-content: center;
-    height: 5rem;
-    padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	width: 3rem;
+	justify-content: center;
+	height: 5rem;
+	padding: 1rem;
 }
 
 span.card_tier_star {
-    flex: 0 0 33%;
+	flex: 0 0 33%;
 }
