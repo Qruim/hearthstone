@@ -1,4 +1,5 @@
-# hearthstone
+# hearthstone battlegrounds knockoff
+this is my personal project that aims to mimic the original Heartstone Battlegrounds by Blizzard experience. The work is still very much in progress :)
 
 # Getting Started with Create React App
 
